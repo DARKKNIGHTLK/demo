@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+  aop:
+    auto: true
+
+user:
+  username: 李锴
+  age: 25
+  sex: 男

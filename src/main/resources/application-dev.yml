@@ -1,0 +1,28 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.178.128:3306/springboot?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  # 搜索指定包别名
+  typeAliasesPackage: com.javaboy.demo.entity
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapperLocations: classpath:/mapper/*.xml
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
+
+security:
+  basic:
+    enabled: true
+
+Using generated security password: 078db2a5-ae07-4a10-a85c-cf0162a7e966
