@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoApplication {
 
     public static void main(String[] args) throws Exception {
-        System.out.println("8889995555");
+        System.out.println("rrr");
         SpringApplication.run(DemoApplication.class, args);
     }
 
