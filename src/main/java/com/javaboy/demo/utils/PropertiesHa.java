@@ -12,7 +12,7 @@ public class PropertiesHa extends java.util.Properties {
     private static String sex;
 
     static {
-        System.out.println("自动装配");
+        System.out.println("自动装配123456789");
 
     }
 
