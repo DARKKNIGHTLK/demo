@@ -1,6 +1,8 @@
 server:
   port: 8085
 
+#elasticsearch:
+#  ip: 127.0.0.1:9200
 spring:
   datasource:
     username: root
@@ -21,8 +23,8 @@ logging:
       example:
         mapper : debug
 
-security:
-  basic:
-    enabled: true
+#security:
+#  basic:
+#    enabled: true
 
-Using generated security password: 078db2a5-ae07-4a10-a85c-cf0162a7e966
+#Using generated security password: 078db2a5-ae07-4a10-a85c-cf0162a7e966

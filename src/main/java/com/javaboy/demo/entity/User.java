@@ -1,23 +1,24 @@
 package com.javaboy.demo.entity;
 
 import com.javaboy.demo.annotation.GroupBy;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
 
-@Component
+//@Component
+@Document(indexName = "user", type = "user")
 public class User {
+    @Id
     private Integer id;
 
-    @Value("${user.username}")
+//    @Value("${user.username}")
     private String name;
 
     private String province;
 
-    @Value("${user.age}")
+//    @Value("${user.age}")
     private int age;
 
-
-    @Value("${user.sex}")
+//    @Value("${user.sex}")
     private String sex;
 
     public String getName() {

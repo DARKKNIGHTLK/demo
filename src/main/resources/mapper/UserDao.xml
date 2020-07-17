@@ -22,4 +22,8 @@
         SELECT * FROM user a
         WHERE a.id = #{id}
     </select>
+    <select id="getByUserName" resultType="com.javaboy.demo.entity.User">
+        SELECT * FROM user a
+        WHERE a.name = #{userName}
+    </select>
 </mapper>

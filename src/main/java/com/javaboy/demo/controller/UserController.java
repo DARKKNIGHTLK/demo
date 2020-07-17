@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/demo")
 public class UserController {
-    @Autowired
-    private User user;
+//    @Autowired
+//    private User user;
 
     @Autowired
     private UserService userService;
@@ -32,10 +32,10 @@ public class UserController {
     @RequestMapping("getInfo")
     public R getInfo() throws Exception {
 //        user = userService.getById(user.getId());
-        System.out.println(user);
+//        System.out.println(user);
 
         test();
-        return R.ok().put("user",user);
+        return R.ok()/*.put("user",user)*/;
     }
 
     @SysLog("测试")

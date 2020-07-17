@@ -14,6 +14,14 @@ public interface UserDao {
     User getById(@Param("id") Integer id);
 
     /**
+     * 根据userName获取
+     * @param userName
+     * @return
+     */
+    User getByUserName(@Param("String") String userName);
+
+
+    /**
      * 保存
      * @param userName 名称
      */

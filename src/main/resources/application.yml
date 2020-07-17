@@ -3,6 +3,15 @@ spring:
     active: dev
   aop:
     auto: true
+  application:
+    name: search
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+#      cluster-nodes: http://106.14.47.110:9200
+      repositories:
+        enabled: true
+
 
 user:
   username: 李锴

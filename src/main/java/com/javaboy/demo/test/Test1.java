@@ -2,8 +2,7 @@ package com.javaboy.demo.test;
 
 import com.javaboy.demo.annotation.SysLog;
 import com.javaboy.demo.controller.UserController;
-import com.javaboy.demo.controller.Zhujie;
-import com.javaboy.demo.entity.User;
+import com.javaboy.demo.annotation.Zhujie;
 import com.javaboy.demo.service.UserService;
 import org.junit.Test;
 

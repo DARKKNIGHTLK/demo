@@ -1,4 +1,4 @@
-package com.javaboy.demo.controller;
+package com.javaboy.demo.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
