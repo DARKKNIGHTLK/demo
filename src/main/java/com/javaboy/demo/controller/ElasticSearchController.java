@@ -14,6 +14,7 @@ import java.util.Optional;
 
 
 @RestController
+@RequestMapping("/user")
 public class ElasticSearchController {
 
     @Autowired
@@ -30,6 +31,14 @@ public class ElasticSearchController {
         User user = opt.get();
         System.out.println(user);
         return user;
+    }
+
+    @RequestMapping("/all")
+    @ResponseBody
+    public Iterable<User> getAll(){
+        Iterable<User> userList =userService.getAll();
+        System.out.println(userList);
+        return userList;
     }
 
 

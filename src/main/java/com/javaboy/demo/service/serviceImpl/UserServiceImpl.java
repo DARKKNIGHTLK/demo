@@ -4,7 +4,6 @@ import com.javaboy.demo.dao.UserDao;
 import com.javaboy.demo.dao.UserRepository;
 import com.javaboy.demo.entity.User;
 import com.javaboy.demo.service.UserService;
-import com.javaboy.demo.dao.BookRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -27,6 +26,11 @@ public class UserServiceImpl implements UserService {
     public Optional<User> findById(String id) {
         //CrudRepository中的方法
         return userRepository.findById(id);
+    }
+
+    @Override
+    public Iterable<User> getAll() {
+        return userRepository.findAll();
     }
 
     @Resource

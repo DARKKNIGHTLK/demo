@@ -9,6 +9,8 @@ public interface UserService {
 
     Optional<User> findById(String id);
 
+
+    Iterable<User> getAll();
     /**
      * 保存
      * @param userName 名称
