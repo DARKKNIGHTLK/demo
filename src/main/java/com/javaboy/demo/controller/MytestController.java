@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("/mytest")
@@ -47,8 +46,4 @@ public class MytestController {
         return myTestList;
     }
 
-//    @RequestMapping("/deleteIndex")
-//    public R deleteIndex() {
-//
-//    }
 }
